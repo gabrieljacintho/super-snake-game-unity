@@ -6,7 +6,7 @@ Available on [itch.io](https://gabrielbertasso.itch.io/super-snake-game)!
 ## 🎮 Controls
 Get ready to dive into the action with these intuitive controls:
 
-* Movement: Use W, A, S, D keys to change the direction your snake is crawling through the game world.
+* Movement: Use custom keyboard keys to change the direction your snake is crawling through the game world.
 * Pause: Press Esc to pause the game during gameplay.
 
 ## Video
