@@ -249,7 +249,7 @@ MonoBehaviour:
     Avoid other snakes and collect blocks to earn points.
 
     All
-    blocks give you points when collected, but some blocks are special:
+    blocks grant points when collected, but some blocks are special:
 
     - <color=#11A555>Green</color>
     blocks grant extra life.
