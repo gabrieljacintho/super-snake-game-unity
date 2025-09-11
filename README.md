@@ -4,9 +4,8 @@ Super Snake Game is a local co-op snake arcade game.
 Available on [itch.io](https://gabrielbertasso.itch.io/super-snake-game)!
 
 ## How to play
-Don't hit other snakes and collect blocks to earn points.
+Avoid other snakes and collect blocks to earn points. All blocks give you points when collected, but some blocks are special:
 
-- Black blocks represent enemy snakes.
 - Green blocks give you extra life.
 - Light purple blocks increase your movement speed.
 - And dark purple blocks give you extra life, and when consumed, they rewind the game to the time when you initially collected them.
