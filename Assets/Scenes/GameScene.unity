@@ -2472,7 +2472,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b63646b049473489415bb9a32d8118, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseKey: 27
+  pauseKey: 8
   pauseAudio:
     samples:
     - {fileID: 8300000, guid: 9f9714d29b6b358468a37ef79529f90f, type: 3}
