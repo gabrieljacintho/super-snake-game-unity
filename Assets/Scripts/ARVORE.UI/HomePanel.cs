@@ -19,7 +19,9 @@ namespace ARVORE.UI
                 UIManager.Instance.SwitchPanel(Panel.Players);
                 playAudio.Play();
             }
+#if UNITY_STANDALONE
             else if (Input.GetKeyDown(exitKey)) Application.Quit();
+#endif
         }
     }
 }
