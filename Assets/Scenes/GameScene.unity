@@ -358,7 +358,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &95587543
 RectTransform:
   m_ObjectHideFlags: 0
@@ -865,7 +865,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &473147049
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1231,7 +1231,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &520475599
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2549,7 +2549,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1191361371
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2971,7 +2971,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1401165745
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3439,7 +3439,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 8d2f03a16a78cac41a90a0988395f3ba, type: 3}
     - {fileID: 8300000, guid: 4b047b5c50355bd48a0b3477cb7610df, type: 3}
     volumeScale: 1
-  homeKey: 27
+  homeKey: 8
   homeAudio:
     samples:
     - {fileID: 8300000, guid: 9f9714d29b6b358468a37ef79529f90f, type: 3}
@@ -3647,7 +3647,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 8d2f03a16a78cac41a90a0988395f3ba, type: 3}
     - {fileID: 8300000, guid: 4b047b5c50355bd48a0b3477cb7610df, type: 3}
     volumeScale: 1
-  homeKey: 27
+  homeKey: 8
   homeAudio:
     samples:
     - {fileID: 8300000, guid: 9f9714d29b6b358468a37ef79529f90f, type: 3}
@@ -3708,7 +3708,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1819464109
 RectTransform:
   m_ObjectHideFlags: 0
