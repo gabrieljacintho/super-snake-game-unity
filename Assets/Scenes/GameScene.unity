@@ -244,7 +244,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Howa to ply:
+  m_text: 'How to play:
 
     Avoid other snakes and collect blocks to earn points.
 
@@ -252,14 +252,14 @@ MonoBehaviour:
     blocks give you points when collected, but some blocks are special:
 
     - <color=#11A555>Green</color>
-    blocks give you extra life.
+    blocks grant extra life.
 
-    - <color=#9115D9>Light purple</color> blocks
-    increase your movement speed.
+    - <color=#9115D9>Light purple</color> blocks grant
+    increased movement speed.
 
-    - And <color=#3B055B>dark purple</color>
-    blocks give you extra life, and when consumed, they rewind the game to the time
-    when you initially collected them.
+    - And <color=#3B055B>dark purple</color> blocks
+    also grant extra life, but when consumed, they rewind the game to the moment
+    you initially collected them.
 
 
     Play to achieve the best score!'
