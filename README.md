@@ -7,9 +7,9 @@ Available on [itch.io](https://gabrielbertasso.itch.io/super-snake-game)!
 Avoid other snakes and collect blocks to earn points.
 
 All blocks give you points when collected, but some blocks are special:
-- Green blocks give you extra life.
-- Light purple blocks increase your movement speed.
-- And dark purple blocks give you extra life, and when consumed, they rewind the game to the time when you initially collected them.
+- Green blocks grant extra life.
+- Light purple blocks grant increased movement speed.​
+- And dark purple blocks also grant extra life, but when consumed, they rewind the game to the moment you initially collected them.
 
 Play to achieve the best score!
 
