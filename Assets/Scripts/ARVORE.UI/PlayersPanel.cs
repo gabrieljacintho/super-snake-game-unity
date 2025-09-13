@@ -19,6 +19,11 @@ namespace ARVORE.UI
         public List<KeyCode> newPlayerKeys;
         public Audio newPlayerAudio;
 
+        [Space]
+        public bool AutoAddFirstPlayer = true;
+        public KeyCode FirstPlayerLeftKey = KeyCode.A;
+        public KeyCode FirstPlayerRightKey = KeyCode.S;
+
         private List<KeyCode> _currentAvaliableKeys;
         private List<PlayerPanel> _playerPanels = new List<PlayerPanel>();
 
@@ -34,6 +39,11 @@ namespace ARVORE.UI
             _leftKey = KeyCode.None;
             _rightKey = KeyCode.None;
             _t = 0f;
+
+            if (AutoAddFirstPlayer)
+            {
+                AddPlayerPanel(FirstPlayerLeftKey, FirstPlayerRightKey);
+            }
         }
 
         private void OnDisable()

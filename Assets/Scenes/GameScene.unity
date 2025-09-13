@@ -769,7 +769,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: v1.2.0
+  m_text: v1.3.0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d9301875349472644aa3721fde4bbb48, type: 2}
   m_sharedMaterial: {fileID: -631077658747553135, guid: d9301875349472644aa3721fde4bbb48, type: 2}
@@ -3208,6 +3208,9 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 17a1a4c93654f8940b09242c3e3ba380, type: 3}
     - {fileID: 8300000, guid: d955d1d844c82314182d0d2609c5708e, type: 3}
     volumeScale: 1
+  AutoAddFirstPlayer: 1
+  FirstPlayerLeftKey: 97
+  FirstPlayerRightKey: 115
 --- !u!1 &1547760599
 GameObject:
   m_ObjectHideFlags: 0
