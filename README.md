@@ -1,7 +1,7 @@
 # Super Snake Game
 Super Snake Game is a local co-op snake arcade game for PC and web, developed with Unity Engine and C#.
 
-Available on [itch.io](https://gabrielbertasso.itch.io/super-snake-game)!
+Self-published on CrazyGames (no longer available) and [itch.io](https://gabrielbertasso.itch.io/super-snake-game).
 
 ## How to play
 Avoid other snakes and collect blocks to earn points.
