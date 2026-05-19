@@ -7,17 +7,17 @@ Self-published on CrazyGames (no longer available) and [itch.io](https://gabriel
 Avoid other snakes and collect blocks to earn points.
 
 All blocks grant points when collected, but some blocks are special:
-- Green blocks grant extra life.
-- Light purple blocks grant increased movement speed.​
-- And dark purple blocks also grant extra life, but when consumed, they rewind the game to the moment you initially collected them.
+- **Green blocks** grant extra life.
+- **Light purple blocks** grant increased movement speed.​
+- And **dark purple blocks** also grant extra life, but when consumed, they rewind the game to the moment you initially collected them.
 
 Play to achieve the best score!
 
 ## 🎮 Controls
 Get ready to dive into the action with these intuitive controls:
 
-* Movement: Use the keyboard keys you chose to change the direction your snake is crawling through the game world.
-* Pause: Press Esc to pause the game during gameplay.
+* **Movement:** Use the keyboard keys you chose to change the direction your snake is crawling through the game world.
+* **Pause:** Press Esc to pause the game during gameplay.
 
 ## Video
 [![](https://img.youtube.com/vi/fuj-Hf8ErSg/0.jpg)](https://youtu.be/fuj-Hf8ErSg)
