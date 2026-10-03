@@ -20,7 +20,7 @@ Get ready to dive into the action with these intuitive controls:
 * **Pause:** Press Esc to pause the game during gameplay.
 
 ## Video
-https://github.com/user-attachments/assets/f640d382-2d67-42b2-a648-72b68e200983
+https://github.com/user-attachments/assets/4177b940-8627-4ba2-a254-10b3f25adbe4
 
 ## Screenshots
 ![SnakeGame_Screenshot_01](https://github.com/user-attachments/assets/89f70461-b2ff-4330-a858-779c0498b543)
