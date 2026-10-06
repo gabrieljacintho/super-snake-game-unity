@@ -1,3 +1,4 @@
+using GabrielBertasso.BackendIntegration;
 using GabrielBertasso.TimeTravel;
 using System.Collections.Generic;
 using UnityEngine;
@@ -29,7 +30,7 @@ namespace GabrielBertasso.Core
 
         private void LateUpdate()
         {
-            Cursor.visible = false;
+            Cursor.visible = UIManager.Instance.Panel == Panel.Home;
 
             if (State != GameState.InGame) return;
 
@@ -84,6 +85,8 @@ namespace GabrielBertasso.Core
         {
             State = GameState.Finished;
             if (UIManager.Instance != null) UIManager.Instance.SwitchPanel(Panel.GameOver);
+
+            PlayersManager.Instance.UpdateHighscore(Score);
         }
 
         public void BackToHome()
