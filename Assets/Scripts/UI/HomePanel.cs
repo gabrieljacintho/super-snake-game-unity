@@ -1,0 +1,27 @@
+using GabrielBertasso.Core;
+using UnityEngine;
+
+namespace GabrielBertasso.UI
+{
+    public class HomePanel : MonoBehaviour
+    {
+        public KeyCode playKey = KeyCode.Return;
+        public Audio playAudio;
+
+        [Space]
+        public KeyCode exitKey = KeyCode.Escape;
+
+
+        private void Update()
+        {
+            if (Input.GetKeyDown(playKey) && UIManager.Instance != null)
+            {
+                UIManager.Instance.SwitchPanel(Panel.Players);
+                playAudio.Play();
+            }
+#if UNITY_STANDALONE
+            else if (Input.GetKeyDown(exitKey)) Application.Quit();
+#endif
+        }
+    }
+}
