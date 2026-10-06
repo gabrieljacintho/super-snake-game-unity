@@ -39,7 +39,7 @@ namespace GabrielBertasso.BackendIntegration
             }, onError);
         }
 
-        public IEnumerator Send(string method, string body, Action<PlayerResponse> onSuccess = null, Action<string> onError = null)
+        public IEnumerator Send(string method, string json, Action<PlayerResponse> onSuccess = null, Action<string> onError = null)
         {
             bool tokenOk = false;
 
@@ -56,9 +56,9 @@ namespace GabrielBertasso.BackendIntegration
             request.downloadHandler = new DownloadHandlerBuffer();
             request.SetRequestHeader("Authorization", $"Bearer {AccountManager.Instance.Session.token}");
 
-            if (body != null)
+            if (!string.IsNullOrEmpty(json))
             {
-                request.uploadHandler = new UploadHandlerRaw(Encoding.UTF8.GetBytes(body));
+                request.uploadHandler = new UploadHandlerRaw(Encoding.UTF8.GetBytes(json));
                 request.SetRequestHeader("Content-Type", "application/json");
             }
 
@@ -66,9 +66,7 @@ namespace GabrielBertasso.BackendIntegration
 
             if (request.result != UnityWebRequest.Result.Success)
             {
-                string msg = string.IsNullOrEmpty(request.downloadHandler.text) ? request.error : request.downloadHandler.text;
-                onError?.Invoke(msg);
-
+                onError?.Invoke(request.error);
                 yield break;
             }
 

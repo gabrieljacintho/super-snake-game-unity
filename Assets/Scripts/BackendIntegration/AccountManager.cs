@@ -36,7 +36,7 @@ namespace GabrielBertasso.BackendIntegration
 
         public IEnumerator RegisterCoroutine(RegisterRequest registerRequest, Action<AuthenticationResponse> onSuccess = null, Action<string> onError = null)
         {
-            yield return Post("/api/account/register", JsonUtility.ToJson(registerRequest), false, onSuccess, onError);
+            yield return Post("/api/account/register", JsonUtility.ToJson(registerRequest), onSuccess, onError);
         }
 
         public void Login(LoginRequest loginRequest, Action<AuthenticationResponse> onSuccess = null, Action<string> onError = null)
@@ -46,7 +46,7 @@ namespace GabrielBertasso.BackendIntegration
 
         public IEnumerator LoginCoroutine(LoginRequest loginRequest, Action<AuthenticationResponse> onSuccess = null, Action<string> onError = null)
         {
-            yield return Post("/api/account/login", JsonUtility.ToJson(loginRequest), false, onSuccess, onError);
+            yield return Post("/api/account/login", JsonUtility.ToJson(loginRequest), onSuccess, onError);
         }
 
         public void Logout(Action onDone = null)
@@ -80,7 +80,7 @@ namespace GabrielBertasso.BackendIntegration
         {
             RefreshTokenRequest refreshTokenRequest = new RefreshTokenRequest(Session.token, Session.refreshToken);
 
-            yield return Post("/api/account/refresh-token", JsonUtility.ToJson(refreshTokenRequest), false, onSuccess, onError);
+            yield return Post("/api/account/refresh-token", JsonUtility.ToJson(refreshTokenRequest), onSuccess, onError);
         }
 
         public IEnumerator EnsureValidToken(Action<bool> onResult = null)
@@ -104,22 +104,15 @@ namespace GabrielBertasso.BackendIntegration
             onResult?.Invoke(ok);
         }
 
-        private IEnumerator Post(string path, string json, bool auth, Action<AuthenticationResponse> onSuccess = null, Action<string> onError = null)
+        private IEnumerator Post(string path, string json, Action<AuthenticationResponse> onSuccess = null, Action<string> onError = null)
         {
             using UnityWebRequest request = UnityWebRequest.Post($"{_baseUrl}{path}", json, "application/json");
-
-            if (auth)
-            {
-                request.SetRequestHeader("Authorization", $"Bearer {Session.token}");
-            }
 
             yield return request.SendWebRequest();
 
             if (request.result != UnityWebRequest.Result.Success)
             {
-                string msg = string.IsNullOrEmpty(request.downloadHandler.text) ? request.error : request.downloadHandler.text;
-                onError?.Invoke(msg);
-
+                onError?.Invoke(request.error);
                 yield break;
             }
 
