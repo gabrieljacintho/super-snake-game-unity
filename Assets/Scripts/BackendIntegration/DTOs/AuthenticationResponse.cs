@@ -8,12 +8,14 @@ namespace GabrielBertasso.BackendIntegration.DTOs
     {
         public string name;
         public string email;
+        public string[] roles;
         public string token;
         public string expiration;
         public string refreshToken;
         public string refreshTokenExpiration;
 
         public DateTime ExpirationUtc => DateTime.Parse(expiration, null, DateTimeStyles.AdjustToUniversal);
+        public bool IsAdmin => roles != null && Array.IndexOf(roles, "Admin") >= 0;
 
         public AuthenticationResponse() { }
 
